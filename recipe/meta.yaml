@@ -12,6 +12,7 @@ source:
 build:
   number: 0
   skip: True  # [py<35]
+  skip: True  # [not (linux and x86_64)]
   script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
@@ -21,7 +22,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - numpy >=1.15
+    - numpy >=1.15,<1.25
     - python
 
 test:
