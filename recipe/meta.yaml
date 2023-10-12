@@ -22,7 +22,7 @@ requirements:
     - setuptools
     - wheel
   run:
-    - numpy >=1.15,<1.25
+    - numpy >=1.15,<1.24
     - python
 
 test:
